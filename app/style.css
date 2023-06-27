@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* font-size: 62.5%; */
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    height: 100%;
+    background:hsl(228, 33%, 97%);
+}
+
+a,
+a:visited,
+a:link {
+    /* code here */
+    text-decoration: underline;
+}
+
+.container {
+    max-width:750px;
+    margin: 0 auto;
+    padding-top:40px;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.card_template {
+    display:none;
+}
+
+.card {
+    display:flex;
+    padding:25px;
+    gap:25px;
+    margin-bottom: 20px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.profile_info{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile_name {
+    color:hsl(212, 24%, 26%);
+    font-weight: 500;
+}
+.profile_status {
+    display:flex; 
+    align-items: center; 
+    gap: 10px;
+}
+
+.score_container  {
+    align-self: flex-start;
+    background-color: hsl(228, 33%, 97%);
+    border-radius: 10px;
+    text-align: center;
+    color:hsl(238, 40%, 52%);
+}
+
+.created_at {
+    color:hsl(211, 10%, 45%);
+}
+.comment {
+    color: hsl(211, 10%, 45%);
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.score {
+    font-weight: 500;
+}
+.plus,.minus{
+    border:none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: hsl(228, 33%, 97%);
+}
+.profile_pic{
+    width:40px;
+}
+
+.btn_reply {
+    display:flex;
+    align-items: center;
+    border:none;
+    gap:10px;
+    padding: 5px 10px;
+    color: hsl(238, 40%, 52%);
+    background: transparent;
+    font-weight: 500;
+}
+
+.comment_section{
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    padding:20px;
+    align-self: flex-start;
+    
+    align-items: flex-start;
+    
+    justify-content: space-evenly;
+    
+}
+.current_user_comment{
+    height:100px;
+    width:545px;
+    border-color: hsl(223, 19%, 93%);
+    font-family: inherit;
+    border-radius:7px;
+    padding:15px;
+    resize: none;
+
+}
+.btn_send{
+    padding:10px 25px;
+    border-radius: 7px;
+    font-family: inherit;
+    background-color: hsl(238, 40%, 52%);
+    color:white;
+    border:none;
+    
+    
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
