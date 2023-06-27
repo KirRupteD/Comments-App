@@ -136,10 +136,28 @@ button {
     background-color: hsl(238, 40%, 52%);
     color:white;
     border:none;
-    
-    
-
 }
 
+.comment_wrapper {
+    display:flex;
+    justify-content: end;
+    width:100%;
+    margin-bottom:25px;
+}
+
+.reply_container {
+    flex:0 0 95%;
+    border-left: 2px solid hsl(223, 19%, 93%);
+    padding-left:30px;
+}
+/* For Replies */
+.reply_container .card:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+
+.comment_reply_template {
+    display:none;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
